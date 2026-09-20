@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "URL Risk Checker",
+  "version": "1.0.0",
+  "description": "Checks URLs against threat-intelligence sources and warns before you land on a risky page.",
+  "permissions": ["activeTab", "storage", "tabs", "webNavigation"],
+  "host_permissions": ["http://localhost:3000/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

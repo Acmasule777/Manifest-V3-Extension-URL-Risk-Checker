@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 320px; font-family: sans-serif; padding: 12px; }
+    .url { font-size: 12px; word-break: break-all; color: #555; margin-bottom: 10px; }
+    .status { font-size: 18px; font-weight: bold; padding: 8px; border-radius: 6px; text-align: center; }
+    .safe { background: #e6f4ea; color: #1e7e34; }
+    .suspicious { background: #fff4e5; color: #b26a00; }
+    .malicious { background: #fdecea; color: #c0392b; }
+    .score { font-size: 13px; margin: 8px 0; }
+    ul { padding-left: 18px; font-size: 12px; }
+    li { margin-bottom: 4px; }
+  </style>
+</head>
+<body>
+  <div class="url" id="url">Loading...</div>
+  <div class="status" id="status">Checking...</div>
+  <div class="score" id="score"></div>
+  <ul id="findings"></ul>
+  <script src="popup.js"></script>
+</body>
+</html>
